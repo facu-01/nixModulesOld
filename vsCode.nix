@@ -8,6 +8,6 @@
 
   services.vscode-server.enable = true;
 
-  environment.systemPackages = [ pkgs.rnix-lsp ];
+  # environment.systemPackages = [ pkgs.rnix-lsp ];
 
 }

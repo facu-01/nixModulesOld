@@ -4,7 +4,7 @@
   imports = [
     ./vsCode.nix
     ./home.nix
-    ./flakes.nix
+    #./flakes.nix
   ];
 
 }
