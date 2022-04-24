@@ -5,9 +5,14 @@ let
 in
 
 {
+  nixpkgs.config.allowUnfree = true;
+
   environment.systemPackages = with pkgs; [
     rnix-lsp
     sqlite
+    vscode
+    spotify
+    lm_sensors
   ];
 
   # Terminal config
@@ -18,6 +23,7 @@ in
 
   imports = [
     (import "${home-manager}/nixos")
+    ./plasma.nix
   ];
 
   # Home manager config
