@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, options, ... }:
 
 let
   home-manager = builtins.fetchTarball "https://github.com/nix-community/home-manager/archive/master.tar.gz";
@@ -13,6 +13,8 @@ in
     vscode
     spotify
     lm_sensors
+    gparted
+    p7zip
   ];
 
   # Terminal config
@@ -20,10 +22,13 @@ in
   users.defaultUserShell = pkgs.xonsh;
   # programs.zsh.enable = true;
   # users.defaultUserShell = pkgs.zsh;
+  services.ntp.enable = true;
+  networking.timeServers = options.networking.timeServers.default ++ [ "ntp.example.com" ];
 
   imports = [
     (import "${home-manager}/nixos")
     ./plasma.nix
+    ./docker.nix
   ];
 
   # Home manager config
