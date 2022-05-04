@@ -5,7 +5,10 @@
 
   environment.systemPackages = with pkgs; [
     libsForQt5.yakuake
+    libsForQt5.ark
   ];
+
+  programs.kdeconnect.enable = true;
 
   # Config
   services.xserver.enable = true;
