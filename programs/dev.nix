@@ -6,11 +6,17 @@
   ];
 
   environment.systemPackages = with pkgs; [
+
+    rnix-lsp # language support for nix
     vscode
-    postman
+
     jetbrains.datagrip
-    # jetbrains.webstorm
-    # jetbrains.idea-ultimate
+    jetbrains.webstorm
+    jetbrains.idea-ultimate
+
+    ghc
+    stack
+
     # jetbrains.ruby-mine
 
     # ruby_3_0

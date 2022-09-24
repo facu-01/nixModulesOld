@@ -3,8 +3,9 @@
 {
   imports = [
     #./vsCode.nix
-    ./programs/home.nix
-    ./hardware/laptop.nix
+    ./programs/dev.nix
+    ./nixosOptions/virtualBox.nix
+    #./hardware/laptop.nix
     #./flakes.nix
   ];
 
