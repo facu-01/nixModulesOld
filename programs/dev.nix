@@ -16,6 +16,9 @@
 
     ghc
     stack
+    haskell-language-server
+
+    exercism
 
     # jetbrains.ruby-mine
 
