@@ -5,6 +5,7 @@
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
 
+  nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
     microsoft-edge
