@@ -20,6 +20,9 @@
 
     exercism
 
+    maven
+    jdk
+
     # jetbrains.ruby-mine
 
     # ruby_3_0
