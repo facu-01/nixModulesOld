@@ -8,7 +8,7 @@
   nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
-    microsoft-edge
+    google-chrome
     git
     # jetbrains.ruby-mine
 
